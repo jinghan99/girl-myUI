@@ -52,8 +52,8 @@ npm install --global vue-cli
 2.用vue-cli来构建项目
 ① 我首先在D盘新建一个文件夹（dxl_vue）作为项目存放地，然后使用命令行cd进入到项目目录输入：
 
-vue init webpack baoge
-baoge是自定义的项目名称，命令执行之后，会在当前目录生成一个以该名称命名的项目文件夹。
+vue init webpack vueapp
+vueapp是自定义的项目名称，命令执行之后，会在当前目录生成一个以该名称命名的项目文件夹。
 
 
 
@@ -63,7 +63,7 @@ baoge是自定义的项目名称，命令执行之后，会在当前目录生成
 
 
 输入命令后，会跳出几个选项让你回答：
-Project name (baoge)： -----项目名称，直接回车，按照括号中默认名字（注意这里的名字不能有大写字母，如果有会报错Sorry, name can no longer contain capital letters），阮一峰老师博客为什么文件名要小写 ，可以参考一下。
+Project name (vueapp)： -----项目名称，直接回车，按照括号中默认名字（注意这里的名字不能有大写字母，如果有会报错Sorry, name can no longer contain capital letters），阮一峰老师博客为什么文件名要小写 ，可以参考一下。
 Project description (A Vue.js project)： ----项目描述，也可直接点击回车，使用默认名字
 
 Author ()： ----作者，输入你的大名
@@ -79,7 +79,7 @@ Setup unit tests with Karma + Mocha? (Y/n) 是否安装单元测试，我选择�
 Setup e2e tests with Nightwatch(Y/n)? 是否安装e2e测试 ，我选择安装y回车
 回答完毕后上图就开始构建项目了。
 
-② 配置完成后，可以看到目录下多出了一个项目文件夹baoge，然后cd进入这个文件夹：
+② 配置完成后，可以看到目录下多出了一个项目文件夹vueapp，然后cd进入这个文件夹：
 安装依赖：
 
 npm install
@@ -95,7 +95,7 @@ npm install
 
 
 npm install ：安装所有的模块，如果是安装具体的哪个个模块，在install 后面输入模块的名字即可。而只输入install就会按照项目的根目录下的package.json文件中依赖的模块安装（这个文件里面是不允许有任何注释的），每个使用npm管理的项目都有这个文件，是npm操作的入口文件。因为是初始项目，还没有任何模块，所以我用npm install 安装所有的模块。安装完成后，目录中会多出来一个node_modules文件夹，这里放的就是所有依赖的模块。
-然后现在，baoge文件夹里的目录是这样的：
+然后现在，vueapp文件夹里的目录是这样的：
 
 
 
